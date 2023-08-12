@@ -109,7 +109,7 @@ h1 {
 }
 .bth-primary:hover {
     color:#1085e4;
-    background-color:#fff ;
+    background-color:transparent;
 }
 .bth-secondary{
     color:#7e8bae;
@@ -136,14 +136,56 @@ h1 {
 }
 .bth-info{
     color: #8085b1;
-    background-color: transparent;
-    border: 1px solid #dce1e5;
     letter-spacing: 2,5px;
     font-size: 12px;
     font-weight: 700;
-    padding: 20px 40px;
+    padding: 19px 61px;
     border-radius: 30px;
     text-transform: uppercase;
+    border: 1px solid #dce1e5 ; 
+}
+.bth-info:hover{
+    color: #fff;
+    background-color:  #4c5f6f;
+    border: 1px solid #fff;
+}
+.grid{
+    display: grid;
+    grid-template-areas: "a b c"
+                        "d b c"
+                        "d f g"
+                        "e f g"
+                        "e h h";
+    max-width: 1110px;
+    margin: 70px auto;   
+    gap: 50px;             
+
+}
+
+.grid-title{
+    grid-area: a;
+}
+.grid-item-1{
+    grid-area: b;
+}
+.grid-item-2{
+    grid-area: c;
+}
+.grid-item-3{
+    grid-area: d;
+}
+.grid-item-4{
+    grid-area: e;
+}
+.grid-item-5{
+    grid-area: f;
+}
+.grid-item-6{
+    grid-area: g;
+}
+.grid-text{
+    grid-area: h;
+    padding: 0 14px;
 }
 .grid h2 {
     font-size: 40px;
@@ -159,11 +201,63 @@ h1 {
     font-size: 20px;
     color: #192b59;
     font-weight: 600;
+    margin-bottom: 18px;
 }
 .grid-item a {
     color:#1085e4;
     font-size: 14px;
     font-weight: 600;
+}
+.grid-item{
+    text-align: center;
+    box-shadow: 0 20px 30px #f4f5f5;  
+    border-radius: 10px;
+    padding: 54px 29px 59px;
+}
+.grid-item-name {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1085e4;}
+    
+.grid-item-name span {
+        font-size: 16px;
+        font-weight: 700;
+        color: #192b59;}
+
+.grid-icon  {
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto 36px;
+}
+.grid-icon-1 {
+    background-image: url(../img/icon-1.png);
+    width: 102px;
+    height: 96px;
+}
+.grid-icon-2 {
+    background-image: url(../img/icon-2.png);
+    width: 121px;
+    height: 113px;
+}
+.grid-icon-3 {
+    background-image: url(../img/icon-3.png);
+    width: 132px;
+    height: 94px;
+}
+.grid-icon-4 {
+    background-image: url(../img/icon-4.png);
+    width: 132px;
+    height: 102px;
+}
+.grid-icon-5 {
+    background-image: url(../img/icon-5.png);
+    width: 146px;
+    height: 104px;
+}
+.grid-icon-6 {
+    background-image: url(../img/icon-6.png);
+    width: 146px;
+    height: 118px;
 }
 .list-stat{
     display: flex;
@@ -194,18 +288,32 @@ h1 {
 }
 .box-price-item {
     background-color:#f5faff;
+    position: relative;
+    padding: 30px 0 95px 0;
+    flex-basis: 32%;
 
 }
 .box-price-item.active{
     background-color:#192b59;
     color: #fff;
+    position: relative;
+    padding: 30px 0 95px 0;
+    flex-basis: 32%;
+    
 }
+.box-price-item.active h3{
+    color: #edf6ff;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    }
 .box-price-item ul {
     list-style-type: none;
     padding-left: 0;
     margin-top: 34px;
     margin-bottom: 59px;
     font-size: 14px;
+    font-weight: 400; 
 }
 .box-price-item ul >li {
     margin-bottom: 14px;
@@ -213,6 +321,7 @@ h1 {
 .box-price {
     display: flex;
     justify-content: space-between;
+    margin-top: 80px;
     }
 .box-price-item p {
     text-transform: uppercase;
@@ -220,12 +329,31 @@ h1 {
     color:#0084ff;
     letter-spacing: 3px;
     margin: 30px 0 0px 0px;
+    font-weight: 700;
 }
 .box-price-item h3{
     font-size: 70px;
     letter-spacing: -1px;
     margin-top: 40px;;
     margin-bottom: 15px;
+    font-weight: 700;
+    color: #000958;
+}
+.box-price-item:first-child h3{
+    margin-bottom: 35px;
+}
+
+.box-price-item h3 span {
+    font-size: 20px;
+    font-weight: 700;
+}
+.mo{
+    color: #4c5f6f;
+}
+/*Доделать надо со скрина */
+.box-header::after{
+    content: "";
+
 }
 .screen-img{
     display: block;
@@ -277,6 +405,50 @@ h1 {
 .list-company-item{
     display: block;
 }
+.box-subscribe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-subscribe-text{
+    font-size: 18px;
+    max-width: 437px;
+}
+.box-subscribe-user{
+    position: relative;
+}
+.box-subscribe-user input{
+    border: 2px solid #3d51a9;
+    border-radius: 45px;
+    background-color: transparent;
+    padding: 25px 230px 25px 37px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #fff;
+}
+.box-subscribe-user input:focus, .box-subscribe-user .bth-primary{
+    outline: none;
+}
+.box-subscribe-child{
+    flex-basis: 49%;
+}
+.box-subscribe-user .bth-primary{
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    padding: 20px 50px;
+    letter-spacing: 1.5px;
+}
+
+
+    .box-subscribe-user input::-webkit-input-placeholder {color:#b1c3ee;}
+    .box-subscribe-user input::-moz-placeholder          {color:#b1c3ee;}
+    .box-subscribe-user input:-moz-placeholder           {color:#b1c3ee;}
+    .box-subscribe-user input:-ms-input-placeholder      {color:#b1c3ee;}
+
+
 
 /* page */
 .page-header{
@@ -303,3 +475,21 @@ h1 {
 .page-screen {
     padding: 116px 0 0 0;
     }
+.page-subscribe{
+    color: #fff;
+    padding: 25px 0 28px 0;
+    background: rgba(10,32,144,1);
+    background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
+    }
+.page-subscribe .title-h2{
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+
+}
