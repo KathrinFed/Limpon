@@ -340,6 +340,7 @@ h1 {
     list-style-type: none;
     justify-content: space-around;
     margin-top: 76px;
+    flex-wrap: wrap;
 }
 .list-stat>li {
     font-size: 12px;
@@ -400,6 +401,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-top: 83px;
+    flex-wrap: wrap;
     }
 .box-price .bth-primary{
     padding: 20px 60px;
@@ -654,8 +656,8 @@ color: #fff;
 }
 .soft-screen{
     background-image: url(../img/soft.png);
-    width: 944px;
-    height:1447px;
+    width: 47%;
+    height: 117%;
     display: block;
     width: 48%; 
     background-size: contain;
@@ -664,7 +666,9 @@ color: #fff;
     position: absolute;
     left: 0%;
     top: 11px;
-
+    z-index: -1;
+    left: -2%;
+  
 }
 
 .page-softwere-list::-webkit-scrollbar {width: 4px; height: 4px;}
@@ -716,9 +720,6 @@ a.video-app{
     top: -54px;
     right: -182px;
 }
-.page-analytics{
-    background-image: url(../img/);
-}
 
 .page-app .wrap{
     position: relative;
@@ -728,11 +729,13 @@ a.video-app{
     background-repeat: no-repeat;
     background-size:cover ;
     padding: 79px 0 106px 0;
+
 }
 .flex-analitics{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .page-analytics-text{
     margin-bottom: 54px;
@@ -748,16 +751,19 @@ a.video-app{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .flex-control>div{
     flex-basis: 54%;
     padding-left: 32px;
 }
 .page-control{
+    display: flex;
     background-image: url(../img/bg-control.png);
     background-repeat: no-repeat;
     background-size:cover ;
     padding: 79px 0 106px 0;
+    flex-wrap: wrap;
 }
 .page-control-text{
     margin-bottom: 54px;
@@ -1190,7 +1196,23 @@ a.video-app{
         width: 482px;
     }
 }
-
+@media (max-width:1300px){
+    .soft-screen{
+        display: none;
+    }
+    .page-softwere-flex>div{
+        flex-basis: 100%;
+        
+    }
+    .page-softwere{
+        padding: 60px 0 60px 0;
+    }
+    .page-softwere-list{
+        max-width: 900px;
+        margin-right: 20px;
+        margin-left: 40px;
+    }
+}
 @media (max-width:1100px){
     .nav, .screen-img{
         display: none;
@@ -1218,6 +1240,40 @@ a.video-app{
     }
     .bth-primary{
         margin-bottom: 15px;
+    }
+    .content-app{
+        width: 100%;
+        text-align: center;
+    }
+    .video-app img{
+        display: none;
+    }
+    .flex-analitics>div{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .flex-analitics .title-h2{
+        margin: 0 auto;
+        font-size: 40px;
+
+    }
+    .page-analytics{
+        background-image: none;
+        margin: 20px 0 20px;
+    }
+    .page-analytics-screen{
+        display: none;
+    }
+    .page-control-img{
+        display: none;
+    }
+    .flex-control>div{
+        flex-basis: 100%;
+        text-align: center;
+        margin: 20px 0 20px;
+    }
+    .flex-control .title-h2{
+        font-size: 40px;
     }
 }
 
@@ -1264,11 +1320,18 @@ a.video-app{
         margin: 0 auto 50px;
     }
 }
-
+@media (max-width: 700px){
+    .list-stat>li{
+        flex-basis: 34%;
+    }
+}
 @media (max-width: 600px){
     h1{
         font-size: 40px;
         margin: 0 auto 30px;
+    }
+    .grid-item {
+        justify-items: center;
     }
     
 }
@@ -1279,7 +1342,7 @@ a.video-app{
         margin: 0 -32px 1px;
         background-repeat: no-repeat;
 }
-    }
+    
     h1{
         font-size: 40px;
     }
@@ -1287,9 +1350,38 @@ a.video-app{
     margin: -12px 27px;
 }
     .list-company{
-        padding: 40px 0 52px;
+        padding: 30px 0 30px;
     }
     .grid h2 {
         text-align: center;
+        font-size: 40px;
     }
+    .box-subscribe img {
+        margin: 0 auto;
+        max-width: 170px;
+    }
+    .grid-title .title-40{
+        flex-basis: 100%;
         
+    }
+    .page-softwere .title-h2 {
+        font-size: 40px;
+    }
+    .page-softwere{
+        padding: 30px 0 30px 0;
+    }
+    .list-stat>li>span {
+        margin: 37px 25px 17px 0px;
+    }
+    .page-stat .title-h2 {
+        margin-bottom:-45px ;
+        font-size: 40px;
+    }
+    .content-app .title-h2 {
+        font-size: 32px;
+    }
+    p{
+       font-size: 14px; 
+    }
+
+}
