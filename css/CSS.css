@@ -1252,9 +1252,10 @@ a.video-app{
     .video-app img{
         display: none;
     }
-    .flex-analitics>div{
+    .flex-analitics>div {
         flex-basis: 100%;
         text-align: center;
+        margin: 26px;
     }
     .flex-analitics .title-h2{
         margin: 0 auto;
@@ -1523,7 +1524,7 @@ background-image: none;
         background-position: -35px 15px;
     }
     .page-control {
-        padding: 172px 0px 99px 0px;
+        padding: 160px 0px 99px 0px;
     }
     .page-control>div{
         flex-basis: 100%;
