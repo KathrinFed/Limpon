@@ -1442,7 +1442,7 @@ background-image: none;
     }
     .box-subscribe-user .bth-primary {
         top: 80px;
-        right: 50px;
+        right: 70px;
     }
     .box-subscribe-user input { 
     padding: 26px 91px 21px 44px;
@@ -1523,8 +1523,7 @@ background-image: none;
         background-position: -35px 15px;
     }
     .page-control {
-        padding: 153px 0 106px 0px;
-        
+        padding: 172px 0px 99px 0px;
     }
     .page-control>div{
         flex-basis: 100%;
