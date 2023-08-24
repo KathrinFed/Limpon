@@ -1245,7 +1245,7 @@ a.video-app{
     .bth-primary{
         margin-bottom: 15px;
         position: relative;
-        top: -27px;
+        top: 3px;
     }
     .content-app{
         width: 100%;
@@ -1257,7 +1257,7 @@ a.video-app{
     .flex-analitics>div {
         flex-basis: 100%;
         text-align: center;
-        margin: 26px;
+        margin: 0px;
     }
     .flex-analitics .title-h2{
         margin: 0 auto;
@@ -1295,6 +1295,7 @@ a.video-app{
     .list-company-item{
         flex-basis: 50%;
         margin-bottom: 50px;
+        justify-content: center;
     }
     .list-company-item span{
         margin: 0 auto;
@@ -1406,7 +1407,9 @@ background-image: none;
     .grid-item {
         justify-items: center;
     }
-   
+    .flex-analitics {
+        margin: -62px auto;
+    }
 }
 @media (max-width: 570px){
     .social {
@@ -1495,6 +1498,7 @@ background-image: none;
 }
     .list-company{
         padding: 30px 0 30px;
+        justify-content: center;
     }
    
     .page-softwere .title-h2 {
@@ -1513,9 +1517,6 @@ background-image: none;
     }
     .flex-control {
         margin: -100px auto;
-    }
-    .flex-analitics {
-        margin: -166px auto;
     }
     .settings-icon {
         background-image: url(../img/icon-soft-copy.png);
