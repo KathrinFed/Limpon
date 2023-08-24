@@ -1244,6 +1244,8 @@ a.video-app{
     }
     .bth-primary{
         margin-bottom: 15px;
+        position: relative;
+        top: -27px;
     }
     .content-app{
         width: 100%;
