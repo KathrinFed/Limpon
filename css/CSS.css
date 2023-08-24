@@ -1410,7 +1410,7 @@ background-image: none;
         list-style-type: none;
         display: flex;
         justify-content: flex-end;
-        margin: 76px 19px -11px -153px;
+        margin: 77px 49px -10px -187px;
     }
     .contact-form input, .contact-form textarea {
         font-size: 8px;
@@ -1469,7 +1469,7 @@ background-image: none;
 }
 }
 
-@media (max-width:320px){
+@media (max-width:360px){
    
     .logo{
         margin: 0 -32px 1px;
