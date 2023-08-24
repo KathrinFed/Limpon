@@ -1389,8 +1389,6 @@ background-image: none;
     }
 }
 
-
-
 @media (max-width: 700px){
     .list-stat>li{
         flex-basis: 34%;
@@ -1527,7 +1525,7 @@ background-image: none;
         background-position: -35px 15px;
     }
     .page-control {
-        padding: 160px 0px 99px 0px;
+        padding: 160px 0px 0px 0px;
     }
     .page-control>div{
         flex-basis: 100%;
